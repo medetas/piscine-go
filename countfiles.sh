@@ -1,1 +1,1 @@
-tree -a | wc -l
+ls -a | wc -l
