@@ -1,1 +1,1 @@
-ls -l | sed "2d;n;d"
+ls -ld * | sed "2d;n;d"
