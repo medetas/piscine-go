@@ -13,7 +13,7 @@ func PrintComb2() {
 
 			for z := 0; z <= 9; z++ {
 				for w := 0; w <= 9; w++ {
-					if z1 >= x1 && w1 > y1 {
+					if z1 >= x1 && w1 >= y1 {
 						z01.PrintRune(x1)
 						z01.PrintRune(y1)
 						z01.PrintRune(32)
