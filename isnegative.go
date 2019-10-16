@@ -8,5 +8,6 @@ func IsNegative(nb int) {
 	} else {
 		fmt.Println("T")
 	}
+	fmt.Print(10)
 }
 
