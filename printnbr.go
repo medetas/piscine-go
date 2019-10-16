@@ -2,21 +2,32 @@ package piscine
 
 import "github.com/01-edu/z01"
 
+func Recur(n int) {
+	if n == 0 {
+		return
+	}
+	c := '0'
+	for i := 0; i < n%10; i++ {
+		c++
+	} 
+	n = n / 10
+	Recur(n)
+	z01.PrintRune(c)
+	
+}
+
 func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune(45)
-		n = n * -1
+	x := -1 * n
+		Recur(x)
+	}else if n == 0 {
+		z01.PrintRune(48)
+		Recur(n)
+	}else {
+		Recur(n) 			
 	}
-	a := n % 10
-	n = n / 10
-	var c rune = '0'
-	if a > 0 {
-		for i := 0; i < a; i++ {
-			c++
-		}
-		PrintNbr(n)
-		z01.PrintRune(c)
-
-	}
-
 }
+	
+
+
