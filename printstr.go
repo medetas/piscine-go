@@ -1,6 +1,5 @@
 package piscine
 
-
 func PrintStr(str string) {
 	slice := []string{
 		str,
