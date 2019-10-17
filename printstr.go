@@ -1,10 +1,12 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func PrintStr(str string) {
-	for i := 0; i < len(str); i++ {
-		z01.PrintRune(rune(str[i]))
+	slice := []string{
+		str,
 	}
-	z01.PrintRune(10)
+	for _, word := range slice {
+		fmt.Printf(word)
+	}
 }
