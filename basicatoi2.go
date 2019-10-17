@@ -1,6 +1,6 @@
 package piscine
 
-func Convert(s rune) int {
+func Convert2(s rune) int {
 	a := 0
 	for true {
 		if s == '0' {
@@ -12,7 +12,7 @@ func Convert(s rune) int {
 	return a
 }
 
-func Count(s []rune) int {
+func Count2(s []rune) int {
 	sum := 0
 	m := 1
 	slice := []rune(s)
@@ -21,7 +21,7 @@ func Count(s []rune) int {
 			sum = 0
 			break
 		}
-		sum = sum + Convert(letter)*m
+		sum = sum + Convert2(letter)*m
 		m = m * 10
 	}
 	return sum
@@ -38,6 +38,6 @@ func BasicAtoi2(s string) int {
 	for index, letter := range slice {
 		slice2[a-index] = letter
 	}
-	result := Count(slice2)
+	result := Count2(slice2)
 	return result
 }
