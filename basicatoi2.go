@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func Convert(s rune) int {
 	a := 0
