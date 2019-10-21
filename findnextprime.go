@@ -9,6 +9,6 @@ func FindNextPrime(nb int) int {
 		}
 		return nb
 	} else {
-		return 3
+		return 2
 	}
 }
