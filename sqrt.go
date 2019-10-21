@@ -1,12 +1,13 @@
 package piscine
 
-func IterativePower(nb int, power int) int {
-	res := 1
-	if power > 0 {
-		for i := 1; i <= power; i++ {
-			res = res * nb
+func Sqrt(nb int) int {
+	s := 0
+	for i := 1; i*i <= nb; i++ {
+		if (nb%i == 0) && (nb/i == i) {
+			s = nb / i
+		} else {
+			s = 0
 		}
-		return res
 	}
-
+	return s
 }
