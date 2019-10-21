@@ -6,7 +6,7 @@ const N int = 9
 
 var position [N]int
 
-func Convert(n int) rune {
+func Conver(n int) rune {
 	charX := '0'
 	for i := 0; i < n; i++ {
 		charX++
@@ -24,12 +24,12 @@ func isSafe(qn int, rp int) bool {
 	return true
 }
 
-func Solve() {
+func Solve(k int) {
 	k := 1
 	if k == N {
 		for i := 1; i < N; i++ {
 			r := position[i]
-			z01.PrintRune(Convert(r))
+			z01.PrintRune(Conver(r))
 		}
 		z01.PrintRune(10)
 	} else {
