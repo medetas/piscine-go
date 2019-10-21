@@ -25,7 +25,6 @@ func isSafe(qn int, rp int) bool {
 }
 
 func Solve(k int) {
-	k := 1
 	if k == N {
 		for i := 1; i < N; i++ {
 			r := position[i]
