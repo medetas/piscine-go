@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func IsPrime(nb int) bool {
 	if nb > 1 {
@@ -13,9 +11,4 @@ func IsPrime(nb int) bool {
 	} else {
 		return false
 	}
-}
-
-func main() {
-	fmt.Println(IsPrime(0))
-	fmt.Println(IsPrime(-5))
 }
