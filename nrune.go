@@ -14,7 +14,6 @@ func NRune(s string, n int) rune {
 	str := []rune(s)
 	if s != "" && n > 0 && Strlen(s) >= n {
 		return str[n-1]
-	} else {
-		return 0
 	}
+	return 0
 }
