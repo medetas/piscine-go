@@ -12,7 +12,7 @@ package piscine
 
 func NRune(s string, n int) rune {
 	str := []rune(s)
-	if s != "" && Strlen(s) >= n && n > 0 {
+	if s != "" && StrLen(s) >= n && n > 0 {
 		return str[n-1]
 	}
 	return 0
