@@ -26,7 +26,7 @@ func Countt(s []rune) int {
 	sum := 0
 	m := 1
 	for _, letter := range s {
-		if letter > '0' && letter < '9' {
+		if letter >= '0' && letter <= '9' {
 			sum = sum + Convertt(letter)*m
 			m = m * 10
 		} else {
