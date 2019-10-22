@@ -12,7 +12,7 @@ func StrLen(str string) int {
 
 func NRune(s string, n int) rune {
 	str := []rune(s)
-	if s != "" && n > 0 && Strlen(s) >= n {
+	if s != "" && Strlen(s) >= n && n > 0 {
 		return str[n-1]
 	}
 	return 0
