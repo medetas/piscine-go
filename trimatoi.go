@@ -27,7 +27,7 @@ func Countt(s []rune) int {
 	m := 1
 	for _, letter := range s {
 		if letter > '0' && letter < '9' {
-			sum = sum + Convert(letter)*m
+			sum = sum + Convertt(letter)*m
 			m = m * 10
 		} else {
 			continue
@@ -53,12 +53,12 @@ func TrimAtoi(s string) int {
 
 	slice = []rune(s)
 
-	a := StrLen(string(slice))
+	a := StrLenn(string(slice))
 
 	slice2 := []rune(s)
 	for index, letter := range slice {
 		slice2[a-index-1] = letter
 	}
-	result := Count(slice2)
+	result := Countt(slice2)
 	return result * sign
 }
