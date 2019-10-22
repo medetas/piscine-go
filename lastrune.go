@@ -1,7 +1,5 @@
 package main
 
-import "github.com/01-edu/z01"
-
 /*func StrLen(str string) int {
 	a := 0
 	slice := []rune(str)
