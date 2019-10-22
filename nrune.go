@@ -1,6 +1,6 @@
 package piscine
 
-func StrLen(str string) int {
+/*func StrLen(str string) int {
 	a := 0
 	slice := []rune(str)
 	for index := range slice {
@@ -8,7 +8,7 @@ func StrLen(str string) int {
 	}
 	return a + 1
 
-}
+}*/
 
 func NRune(s string, n int) rune {
 	str := []rune(s)
