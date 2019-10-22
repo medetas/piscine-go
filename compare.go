@@ -11,21 +11,11 @@ package piscine
 }*/
 
 func Compare(a, b string) int {
-	str1 := ""
-	index := -1
 	if a == b {
 		return 0
+	} else if a < b {
+		return -1
 	} else {
-		for i := 0; i < StrLen(a)-StrLen(b); i++ {
-			for j := 0; j < StrLen(b); j++ {
-				str1 = str1 + string(a[j+i])
-			}
-			if str1 == b {
-				index = 1
-				break
-			}
-			str1 = ""
-		}
-		return index
+		return 1
 	}
 }
