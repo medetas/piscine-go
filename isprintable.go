@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func IsPrintable(str string) bool {
 	slice := []rune(str)
@@ -13,10 +11,4 @@ func IsPrintable(str string) bool {
 		}
 	}
 	return b
-}
-
-func main() {
-	fmt.Println(IsPrintable("Hello"))
-	fmt.Println(IsPrintable("Hello\n"))
-
 }
