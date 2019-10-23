@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func IsUpper(str string) bool {
 	slice := []rune(str)
@@ -13,10 +11,4 @@ func IsUpper(str string) bool {
 		}
 	}
 	return b
-}
-
-func main() {
-	fmt.Println(IsUpper("HELLO"))
-	fmt.Println(IsUpper("HELLO!"))
-
 }
