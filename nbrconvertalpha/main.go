@@ -79,6 +79,7 @@ func Char(a int) rune {
 func main() {
 	if ArrStrL(os.Args) < 2 {
 		z01.PrintRune(10)
+		return
 	}
 	upper := false
 	arr := os.Args[1:]
