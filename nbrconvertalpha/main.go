@@ -83,6 +83,7 @@ func main() {
 	upper := false
 	arr := os.Args[1:]
 	if arr[0] == "--upper" {
+		z01.PrintRune(32)
 		upper = true
 		arr = arr[1:]
 	}
