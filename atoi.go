@@ -18,12 +18,12 @@ func Atoi(s string) int {
 		fmt.Println(string(letter))
 	}*/
 
-	a := StrLen(string(slice))
+	a := StrLenn(string(slice))
 
 	slice2 := []rune(s)
 	for index, letter := range slice {
 		slice2[a-index-1] = letter
 	}
-	result := Count(slice2)
+	result := Countt(slice2)
 	return result * sign
 }
