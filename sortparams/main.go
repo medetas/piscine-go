@@ -12,12 +12,10 @@ func ArgLen(str []string) int {
 	return a + 1
 }
 
-
-
 func main() {
 	arr := os.Args[1:]
 	s := ArgLen(arr)
-	
+
 	for i := s; i > 0; i-- {
 		for j := 1; j < i; j++ {
 			if arr[j-1] > arr[j] {
