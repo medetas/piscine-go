@@ -1,0 +1,28 @@
+package piscine
+
+import (
+	
+	"github.com/01-edu/z01"
+)
+
+func main() {
+	str := "           FOR       123213     2 2PORY 2             "
+	strres := ""
+	size := len(str)
+	if size == 0 {
+		z01.PrintRune(10)
+	}
+	count := 0
+	for i := size - 1; i >= 0; i-- {
+		if str[i] == ' ' {
+			if count != 0 {
+				break
+			}
+			continue
+		}
+		strres = strres + string(str[i])
+		count++
+	}
+	for i := len(strres)-1; i >= 0; i-- {
+		z01.PrintRune(rune(strres[i]))
+	}
