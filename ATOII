@@ -1,0 +1,63 @@
+package piscine
+
+import (
+	"fmt"
+)
+
+func StrLen(str string) int {
+	a := 0
+	for index:= range str{
+		a = index
+	}
+	return a + 1
+
+}
+
+func Convert(s rune) int {
+	a := 0
+	for true {
+		if s == '0' {
+			break
+		}
+		a++
+		s--
+	}
+	return a
+}
+
+func Count(s []rune) int {
+	sum := 0
+	m := 1
+	slice := []rune(s)
+	for _, letter := range slice {
+		if letter < '0' || letter > '9' {
+			sum = 0
+			break
+		}
+		sum = sum + Convert(letter)*m
+		m = m * 10
+	}
+	return sum
+}
+
+func Atoi(s string) int {
+	sign := 1
+	var slice []rune
+	if s == "" {
+		return 0
+	} else if s[0] == '-' {
+		sign = -1
+		s = s[1:]
+	} else if s[0] == '+' {
+		s = s[1:]
+	}
+	slice = []rune(s)
+	a := StrLen(string(slice))
+
+	slice2 := []rune(s)
+	for index, letter := range slice {
+		slice2[a-index-1] = letter
+	}
+	result := Count(slice2)
+	return result * sign
+}
